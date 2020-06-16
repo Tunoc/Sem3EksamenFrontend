@@ -1,10 +1,10 @@
 function URLS() {
   function Login() {
-    const URL = "https://www.tunoc.codes/sem3eksamenbackend/api/login";
+    const URL = "http://localhost:8080/securitystarter/api/login";
     return URL;
   }
   function User() {
-    const URL = "https://www.tunoc.codes/sem3eksamenbackend/api/info/user";
+    const URL = "http://localhost:8080/securitystarter/api/info/user";
     return URL;
   }
 
@@ -26,7 +26,23 @@ function URLS() {
     const URL = "https://www.tunoc.codes/sem3eksamenbackend/api/fetch/catpic";
     return URL;
   }
+  function AllRecepies() {
+    const URL = "https://www.tunoc.codes/sem3eksamenbackend/api/recepies/all";
+    return URL;
+  }
+  function SpecificRecepieInfo() {
+    const URL = "https://www.tunoc.codes/sem3eksamenbackend/api/recepies/id";
+    return URL;
+  }
 
-  return { Login, User, Admin, AdminData, Dog, Cat };
+  return {
+    Login,
+    User,
+    Admin,
+    AdminData,
+    Dog,
+    Cat,
+    AllRecepies,
+  };
 }
 export default new URLS();
